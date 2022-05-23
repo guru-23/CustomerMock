@@ -16,6 +16,7 @@ public class CustomerController {
             produces = { MediaType.APPLICATION_XML_VALUE })
     public Customer createCustomer(@RequestBody Customer customer){
         System.out.println("Input request>>"+customer);
+        System.out.println("main branch change");
         String customerId = String.valueOf((int) (Math.random() * 100000));
         customer.setId(customerId);
         customers.put(customerId, customer);
