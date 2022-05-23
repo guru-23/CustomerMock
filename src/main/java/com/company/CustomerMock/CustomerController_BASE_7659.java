@@ -14,10 +14,9 @@ public class CustomerController {
     @RequestMapping(path = "/customer", method = RequestMethod.POST,
             consumes = { MediaType.APPLICATION_XML_VALUE },
             produces = { MediaType.APPLICATION_XML_VALUE })
-    public Customer makeCustomer(@RequestBody Customer customer){
+    public Customer createCustomer(@RequestBody Customer customer){
         System.out.println("Input request>>"+customer);
-        System.out.println("main branch change");
-        String customerId = "999999";
+        String customerId = String.valueOf((int) (Math.random() * 100000));
         customer.setId(customerId);
         customers.put(customerId, customer);
         return customer;
