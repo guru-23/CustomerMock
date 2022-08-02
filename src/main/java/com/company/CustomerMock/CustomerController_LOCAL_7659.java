@@ -14,12 +14,12 @@ public class CustomerController {
     @RequestMapping(path = "/customer", method = RequestMethod.POST,
             consumes = { MediaType.APPLICATION_XML_VALUE },
             produces = { MediaType.APPLICATION_XML_VALUE })
-    public Customer makeCustomer(@RequestBody Customer customer){
+    public Customer hello(@RequestBody Customer customer){
         System.out.println("Input request>>"+customer);
-        System.out.println("main branch change");
-        String customerId = "999999";
-        customer.setId(customerId);
-        customers.put(customerId, customer);
+        System.out.println("test branch change");
+        String id = "99999";
+        customer.setId(id);
+        customers.put(id, customer);
         return customer;
     }
 

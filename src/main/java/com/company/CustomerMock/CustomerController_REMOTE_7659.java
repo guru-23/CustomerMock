@@ -17,7 +17,7 @@ public class CustomerController {
     public Customer makeCustomer(@RequestBody Customer customer){
         System.out.println("Input request>>"+customer);
         System.out.println("main branch change");
-        String customerId = "999999";
+        String customerId = "112233";
         customer.setId(customerId);
         customers.put(customerId, customer);
         return customer;
