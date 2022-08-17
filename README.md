@@ -6,3 +6,4 @@ Steps to run the service:
 2) To start the application run this command: _java -jar target/CustomerMock-1.0.jar_
 3) This wil start the application on 9091 port
 Adding entries for tag 0.4
+NEW FEATURE ADDED
