@@ -7,3 +7,6 @@ Steps to run the service:
 3) This wil start the application on 9091 port
 Adding entries for tag 0.4
 NEW FEATURE ADDED
+New line 1
+New line 3
+New line 4
